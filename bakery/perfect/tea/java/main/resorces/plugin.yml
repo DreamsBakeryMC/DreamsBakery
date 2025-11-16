@@ -1,0 +1,4 @@
+name: DreamsBakery
+version: '1.0-SNAPSHOT'
+main: net.perfect.tea.dreamsbakery
+api-version: '1.21'
