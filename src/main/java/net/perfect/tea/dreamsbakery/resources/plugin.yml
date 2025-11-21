@@ -1,0 +1,10 @@
+name: DreamsBakeryMC
+version: '1.0-SNAPSHOT'
+main: net.perfect.tea.dreamsbakery.mc
+api-version: '1.21'
+
+commands:
+  dreamsbakery:
+    description: Fala sobre o servidor da DreamsBakery
+    usage: /<command>
+    aliases: [sobreapadaria, padariadossonhos, dreamsbakery]

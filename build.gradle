@@ -3,22 +3,22 @@ plugins {
     id("xyz.jpenilla.run-paper") version "2.3.1"
 }
 
-group = 'net.perfect.tea.organization'
+group = 'net.perfect.tea'
 version = '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
     maven {
-        name = "spigotmc-repo"
-        url = "https://hub.spigotmc.org/nexus/content/repositories/snapshots/"
+        name = "papermc-repo"
+        url = "https://repo.papermc.io/repository/maven-public/"
     }
 }
 
 dependencies {
-    compileOnly("org.spigotmc:spigot-api:1.21.8-R0.1-SNAPSHOT")
-    implementation 'net.perfect.tea.dreamsbakery'
-    implementation 'net.perfect.tea.dreamsbakery.java.latency:1.0'
-    implementation 'net.perfect.tea.dreamsbakery.openbakery'
+    compileOnly("io.papermc.paper:paper-api:1.21.10-R0.1-SNAPSHOT")
+    implementation 'net.dreamsbakery.mc.main.dreamsbakerymc'
+    implementation 'net.perfect.tea.dreamsbakery.launcher'
+    implementation 'net.perfect.tea.dreamsbakery.launcher.start'
 }
 
 tasks {
