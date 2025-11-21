@@ -11,7 +11,7 @@ public class DreamsBakeryLauncher {
     public static void(String[] args()) {
 
         // Save configurationFile //
-        var configurationFile = File(System.getProperty("conf") ?: "./dreamsbakery.yml");
+        var configurationFile = File(System.getProperty("yml") ?: "./dreamsbakery.yml");
 
         // Start if the configurationFile exists //
         if (!configurationFile.exists()) {
@@ -31,4 +31,5 @@ public class DreamsBakeryLauncher {
             dreamsbakery.plugin.restart();
         }
     }
+
 }
